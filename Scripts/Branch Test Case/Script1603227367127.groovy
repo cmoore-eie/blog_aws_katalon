@@ -15,15 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequest(findTestObject('Branch/Branch Create', [('uuid') : 'UUID21', ('code') : 'b1', ('name') : 'Branch Name 1', ('branchtype') : 'Local']), 
+WS.sendRequest(findTestObject('Local/Branch/Branch Create', [('uuid') : 'UUID21', ('code') : 'b1', ('name') : 'Branch Name 1', ('branchtype') : 'Local']), 
     FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Branch/Branch Read', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Branch/Branch Read', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Branch/Branch Update', [('uuid') : 'UUID21', ('code') : 'b1', ('name') : 'Branch Name 1 Changed'
+WS.sendRequest(findTestObject('Local/Branch/Branch Update', [('uuid') : 'UUID21', ('code') : 'b1', ('name') : 'Branch Name 1 Changed'
             , ('branchtype') : 'Main']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Branch/Branch List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Branch/Branch List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Branch/Branch Delete', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Branch/Branch Delete', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
 

@@ -15,15 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequest(findTestObject('Dealer/Dealer Create', [('uuid') : 'UUID31', ('code') : 'd1', ('name') : 'Dealer Name 1']), 
+WS.sendRequest(findTestObject('Local/Dealer/Dealer Create', [('uuid') : 'UUID31', ('code') : 'd1', ('name') : 'Dealer Name 1']), 
     FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Dealer/Dealer Read', [('uuid') : 'UUID31']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Dealer/Dealer Read', [('uuid') : 'UUID31']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Dealer/Dealer Update', [('uuid') : 'UUID31', ('code') : 'd1', ('name') : 'Dealer Name 1 Changed']), 
+WS.sendRequest(findTestObject('Local/Dealer/Dealer Update', [('uuid') : 'UUID31', ('code') : 'd1', ('name') : 'Dealer Name 1 Changed']), 
     FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Dealer/Dealer List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Dealer/Dealer List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Dealer/Dealer Delete', [('uuid') : 'UUID31']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Dealer/Dealer Delete', [('uuid') : 'UUID31']), FailureHandling.STOP_ON_FAILURE)
 

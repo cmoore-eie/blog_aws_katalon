@@ -15,15 +15,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WS.sendRequest(findTestObject('Gender/Gender Create', [('uuid') : 'UUID11', ('code') : 'o', ('name') : 'Other', ('effectivedate') : '2020-01-01']), 
+WS.sendRequest(findTestObject('Local/Gender/Gender Create', [('uuid') : 'UUID11', ('code') : 'o', ('name') : 'Other', ('effectivedate') : '2020-01-01']), 
     FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Gender/Gender Read', [('uuid') : 'UUID11']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Gender/Gender Read', [('uuid') : 'UUID11']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Gender/Gender Update', [('uuid') : 'UUID11', ('code') : 'o', ('name') : 'Gender Other Changed'
+WS.sendRequest(findTestObject('Local/Gender/Gender Update', [('uuid') : 'UUID11', ('code') : 'o', ('name') : 'Gender Other Changed'
             , ('effectivedate') : '2020-01-06']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Gender/Gender List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Gender/Gender List All', [('uuid') : 'UUID21']), FailureHandling.STOP_ON_FAILURE)
 
-WS.sendRequest(findTestObject('Gender/Gender Delete', [('uuid') : 'UUID11']), FailureHandling.STOP_ON_FAILURE)
+WS.sendRequest(findTestObject('Local/Gender/Gender Delete', [('uuid') : 'UUID11']), FailureHandling.STOP_ON_FAILURE)
 
