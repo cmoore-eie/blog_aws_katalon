@@ -36,7 +36,7 @@
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>'UUID11'</defaultValue>
+      <defaultValue>'UUID12'</defaultValue>
       <description></description>
       <id>0863c04b-b36f-45e1-b314-aceba04443bc</id>
       <masked>false</masked>
